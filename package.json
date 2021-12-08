@@ -1,0 +1,43 @@
+{
+  "name": "RealtimePizza",
+  "version": "1.0.0",
+  "description": "This is our realtime pizza",
+  "main": "index.js",
+  "author": "S",
+  "scripts": {
+    "serve": "node server.js",
+    "dev": "nodemon server.js",
+    "development": "mix",
+    "watch": "npx mix watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@stripe/stripe-js": "^1.21.2",
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.13",
+    "noty": "^3.2.0-beta-deprecated",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.4.0",
+    "stripe": "^8.191.0"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.39",
+    "nodemon": "^2.0.15",
+    "resolve-url-loader": "4.0.0",
+    "sass": "^1.43.4",
+    "sass-loader": "12.1.0"
+  }
+}
